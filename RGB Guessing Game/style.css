@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+:root {
+  --primary-color: rgb(0, 140, 150);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(24, 24, 24);
+  font-family: "Raleway", sans-serif;
+}
+/*-----------Header-----------*/
+#header {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+#header .container {
+  font-size: 1.3em;
+}
+/*-----------Task-bar-----------*/
+#task-bar {
+  background-color: #fff;
+}
+.btn {
+  background-color: #fff;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+/*-----------Color blocks-----------*/
+#colors {
+  margin-top: 20px;
+}
+#colors .grid-3 {
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+#colors .container {
+  height: 250px;
+}
+.block {
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#congratulations {
+  text-align: center;
+  text-transform: uppercase;
+}
+#gif {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  opacity: 0;
+}
+/*utilities*/
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
